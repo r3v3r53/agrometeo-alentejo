@@ -1,0 +1,88 @@
+@mastersthesis{DRAPALG_01,
+  author={Miguel Marques Nunes Soares Paulo},
+  year={2011},
+  title={Implementa{\c{c}}{\~a}o de um Modelo de Data Warehouse para o Servi{\c{c}}o
+    Nacional de Avisos Agr{\'i}colas},
+  abstract={O presente relat{\'o}rio de projecto tem como objectivo demonstrar
+    uma aplica{\c{c}}{\~a}o pr{\'a}tica da implementa{\c{c}}{\~a}o de um novo sistema
+    tecnol{\'o}gico de gest{\~a}o de dados numa divis{\~a}o da DGADR do Minist{\'e}rio
+    da Agricultura - o Servi{\c{c}}o Nacional de Avisos Agr{\'i}colas (SNAA). Este
+    sistema de gest{\~a}o de base de dados {\'e} denominado por Data Warehouse,
+    um formato de base de dados que organiza os dados dispostos de uma forma concebida
+    para optimizar a sua an{\'a}lise. O SNAA assume um papel de relevo no contexto
+    agr{\'i}cola portugu{\^e}s pois fornece informa{\c{c}}{\~o}es sob a forma de
+    avisos, obtidas por previs{\~a}o e observa{\c{c}}{\~o}es peri{\'o}dicas, tendo
+    em vista identificar a melhor oportunidade de tratamento fitossanit{\'a}rio
+    dos meios agr{\'i}colas. Estes avisos indicam os produtos fitofarmac{\^e}uticos
+    mais adequados a cada situa{\c{c}}{\~a}o e conduzem, em regra, a uma diminui{\c{c}}{\~a}o
+    do n{\'u}mero de tratamentos fitossanit{\'a}rios. As in{\'u}meras vantagens
+    decorrentes da aplica{\c{c}}{\~a}o de uma tecnologia de Business Intelligence,
+    associadas ao dinamismo na apresenta{\c{c}}{\~a}o da informa{\c{c}}{\~a}o,
+    constituem as motiva{\c{c}}{\~o}es para a elabora{\c{c}}{\~a}o deste relat{\'o}rio
+    como parte integrante do Mestrado em Estat{\'i}stica e Gest{\~a}o de Informa{\c{c}}{\~a}o,
+    com a vertente de especializa{\c{c}}{\~a}o em Business Intelligence e Gest{\~a}o
+    do Conhecimento. O presente projecto assenta no princ{\'i}pio que a implementa{\c{c}}{\~a}o
+    dum DW sobre a base de dados relacional existente, permitir{\'a} um aumento
+    no dinamismo e na forma como se lida com a informa{\c{c}}{\~a}o recolhida,
+    tornando-se poss{\'i}vel obter diversas vantagens competitivas. H{\'a}, assim,
+    que destacar algumas das melhorias que ser{\~a}o obtidas deste projecto: i.
+    Melhoria significativa na consulta e dissemina{\c{c}}{\~a}o da informa{\c{c}}{\~a}o
+    divulgada pelo SNAA; ii. Melhoria da qualidade dos dados; iii. Potencialidade
+    de cria{\c{c}}{\~a}o de sistemas de reporte de informa{\c{c}}{\~a}o, que funcionem
+    como sistemas de apoio {\`a} decis{\~a}o aos utilizadores do portal do SNAA;},
+  month={Novembro},
+  keywords={Business Intelligence; Data Warehouse; Servi{\c{c}}o Nacional de Avisos
+    Agr{\'i}colas; ETL;},
+  school={Instituto Superior de Estat{\'i}stica e Gest{\~a}o de Informa{\c{c}}{\~a}o
+    da Universidade Nova de Lisboa},
+  address={http://run.unl.pt/bitstream/10362/7358/1/TEGI0292.pdf},
+  type={Report}
+}
+
+@article{AgWeatherNet_01,
+  author={F.J. Pierce, T.V. Elliott},
+  year={2008},
+  title={Regional and on-farm wireless sensor networks for agricultural systems
+    in Eastern Washington},
+  abstract={Recent advances in sensor and wireless radio frequency (RF) technologies
+    and their convergence with the Internet offer vast opportunities for development
+    and application of sensor systems for agriculture. The objective was to create
+    regional and on-farm sensor networks that provide remote, real-time monitoring
+    and/or control of important farming operations that add value through improved
+    efficiency and efficacy of targeted management practices. This paper describes
+    hardware and software components of technologies we developed for regional
+    and on-farm sensor networks and their implementation in two agricultural applications
+    in Washington State, an agricultural weather network and an on-farm frost monitoring
+    network. The regional sensor network consists of our AWN200 data logger equipped
+    with a 900 MHz, frequency hopping, spread spectrum (FHSS) radio configured
+    into master–repeater–slave network for broad geographic coverage. A single
+    master is configured with multiple repeaters to provide a RF line-of-sight
+    telemetry backbone network. Independent network backbones from disparate geographic
+    regions are then aggregated in a central database via standard Internet protocols
+    for further processing and dissemination. Software includes firmware to operate
+    the data logger and radio telemetry aspects of the AWN200 in an agricultural
+    weather network application called AgWeatherNet (http://www.weather.wsu.edu).
+    The on-farm sensor network uses our SS100 radio/logger which includes a 900
+    MHz, FHSS radio, with software designed primarily for mobile, real-time farm
+    operations and management applications. The network is deployed in a star topology
+    in which a strategically placed base radio is responsible for network synchronization,
+    data collection from remote stations within the network, and re-broadcasting
+    collected data to roamer radio units attached to mobile computers and/or directly
+    to the Internet. Client software, AgFrostNet, operating on a computer connected
+    to a roamer, collects, manages, and display data in real-time. This software
+    was designed specifically for air temperature monitoring during frost/freeze
+    protection events. Both the regional AgWeatherNet WSN and the on-farm AgFrostNet
+    networks were successfully implemented in Washington State. Problems encountered
+    were mainly associated with power management under periods of low solar energy
+    and with electrostatic discharge (ESD) damage to gallium-arsenide (GaAs) based
+    transmit–receive switches in the radios during storms, a problem now corrected.
+    Both systems have been made commercially available to growers via a novel arrangement
+    between WSU and a local manufacturer.},
+  journal={Emerging Technologies For Real-time and Integrated Agriculture Decisions},
+  volume={61},
+  pages={32-43},
+  month={April},
+  number={1},
+  keywords={Precision agriculture;     Parameter retrieval;     Farm computers}
+}
+
