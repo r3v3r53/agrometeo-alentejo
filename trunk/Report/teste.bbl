@@ -1,15 +1,11 @@
 \begin{thebibliography}{1}
 
-\bibitem{seitz09:_gray_hat_python}
-Justin Seitz.
-\newblock {\em Gray Hat Python: Python Programming for Hackers and Reverse
-  Engineers}.
-\newblock No Starch Press, 2009.
-
-\bibitem{09:_tiobe_progr_commun_index}
-Tiobe programming community index.
-\newblock Internet, Setembro 2009.
-\newblock
-  \url{http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html}.
+\bibitem{DRAPALG_01}
+Miguel Marques Nunes~Soares Paulo.
+\newblock Implementa{\c{c}}{\~a}o de um modelo de data warehouse para o
+  servi{\c{c}}o nacional de avisos agr{\'i}colas.
+\newblock Report, Instituto Superior de Estat{\'i}stica e Gest{\~a}o de
+  Informa{\c{c}}{\~a}o da Universidade Nova de Lisboa,
+  http://run.unl.pt/bitstream/10362/7358/1/TEGI0292.pdf, Novembro 2011.
 
 \end{thebibliography}

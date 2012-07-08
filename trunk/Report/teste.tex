@@ -1,5 +1,5 @@
-%% -*- coding: utf-8 -*-   
-\documentclass[10pt,a4paper,headsepline,bibtotoc,twoside]{scrbook}
+%-*- coding: utf-8 -*-   
+\documentclass[11pt,a4paper,a4wide,headsepline,bibtotoc,twoside]{scrbook}
 
 \usepackage[T1]{fontenc}
 \usepackage{ucs}
@@ -8,8 +8,12 @@
 %\usepackage{textcomp}
 \usepackage{garamond}
 \usepackage{helvet}
+\usepackage{courier} % used to display code
 \usepackage{color}
- 
+ \usepackage{anysize}
+\marginsize{3cm}{2cm}{1cm}{1cm}
+\textwidth 15 cm 
+
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
@@ -33,8 +37,8 @@
 
 \usepackage{listings}
 \lstset{ %
-  language=Python,                % the language of the code
-  basicstyle=\footnotesize,           % the size of the fonts that are used for the code
+  language=SQL,                % the language of the code
+  basicstyle=\ttfamily,           % the size of the fonts that are used for the code
   numbers=left,                   % where to put the line-numbers
   numberstyle=\footnotesize,          % the size of the fonts that are used for the line-numbers
   stepnumber=2,                   % the step between two line-numbers. If it's 1, each line 
@@ -54,6 +58,7 @@
                                   % also try caption instead of title
   numberstyle=\tiny\color{gray},        % line number style
   keywordstyle=\color{blue},          % keyword style
+  columns=fixed,
   commentstyle=\color{dkgreen},       % comment style
   stringstyle=\color{mauve},         % string literal style
   escapeinside={\%*}{*)},            % if you want to add a comment within your code
@@ -68,10 +73,10 @@ filecolor=rltgreen,             % \href*{...}
 linkcolor=rltblue,               % \ref{...} and \pageref{...}
 menucolor=webdarkblue,
 citecolor=webbrightgreen,
-pdftitle={k-d trees},
+pdftitle={Projecto de Fim de Curso},
 pdfauthor={Pedro Moreira, 10015},
-pdfsubject={Trabalho de Época Normal - Estruturas de Dados e Algoritmos},
-pdfkeywords={estruturas de dados e algoritmos},
+pdfsubject={Agrometeo Alentejo},
+pdfkeywords={Estação meteorológica, agricultura, worpress},
 % pdfadjustspacing=1,
 pagebackref=false,
 pdfpagemode=None,
@@ -235,10 +240,25 @@ bookmarksopen=true]{hyperref}
 
 %%\part{}
 
-\chapter{Introdução}
+\chapter{Resumo}
 \label{chap:intro}
+Este trabalho abrange a criação de uma rede de estações meteorológicas no Baixo Alentejo. O mesmo apresenta um estudo sobre projectos semelhantes a nível mundial, quais as vantagens e problemas existentes nas implementações apresentadas.
+O trabalho pode ser dividido em três grandes áreas:
+\subsection*{Recolha de dados}
+\label{sec:recolha_dados}
+Nesta secção são apresentados projectos semelhantes, a forma como recolhem os d secção ados, o tipo de equipamentos utilizados no processo, as principais vantagens e dificuldades de um sistema do mesmo tipo.
+\subsection*{Envio dos dados para o instituto de meteorologia e obtenção de previsões meteorológicas}
+O documento apresenta a forma como é armazenada a informação e, posteriormente, enviada para o Instituto de Meteorologia para a obtenção das previsões meteorológicas para cada um dos locais onde se encontra uma estação meteorológica.
+\subsection*{Interface}
+Nesta secção é apresentado um estudo sobre os tipos de interfaces existentes para consulta de previsoes meteorológicas, bem como a explicação da criação de um interface para o sistema em causa.
 
+\cleardoublepage
+\chapter{Recolha de Dados}
+\label{chap:recolha_dados}
+Após uma pesquisa sobre sistemas semelhantes foram encontrados três considerados úteis para o estudo em causa, dois estarngeiros e um nacional. O Nacional
 
+\cleardoublepage
+\bibliography{bibliografia}
 
 
 \end{document}

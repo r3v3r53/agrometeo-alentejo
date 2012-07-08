@@ -1,7 +1,10 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.17)  5 JUL 2012 23:33
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.6.17)  23 JUN 2012 22:12
 entering extended mode
-**C:/Users/r3v3r53/Desktop/enginf/Projectos/agrometeo-alentejo/Report/capa.tex
-(C:/Users/r3v3r53/Desktop/enginf/Projectos/agrometeo-alentejo/Report/capa.tex
+**C:/Users/r3v3r53/Desktop/enginf/Bases*de*Dados*1/projecto*final/pedro-moreira
+-bd1/report/capa.tex
+
+("C:/Users/r3v3r53/Desktop/enginf/Bases de Dados 1/projecto final/pedro-moreira
+-bd1/report/capa.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -35,10 +38,10 @@ or  <return>  to continue without it.
  
 Here is how much of TeX's memory you used:
  9 strings out of 494045
- 425 string characters out of 3145963
+ 488 string characters out of 3145963
  48890 words of memory out of 3000000
  3400 multiletter control sequences out of 15000+200000
  3640 words of font info for 14 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 5i,0n,4p,109b,16s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 5i,0n,4p,130b,16s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
