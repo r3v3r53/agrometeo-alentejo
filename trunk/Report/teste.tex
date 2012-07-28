@@ -14,26 +14,8 @@
 \marginsize{3cm}{2cm}{1cm}{1cm}
 \textwidth 15 cm 
 
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{rltblue}{rgb}{0.1,0.1,1}
 
-\definecolor{rltbrightred}{rgb}{1,0,0}
-\definecolor{rltred}{rgb}{0.75,0,0}
-\definecolor{rltdarkred}{rgb}{0.5,0,0}
-%
-\definecolor{rltbrightgreen}{rgb}{0,0.75,0}
-\definecolor{rltgreen}{rgb}{0,0.5,0}
-\definecolor{rltdarkgreen}{rgb}{0,0,0.25}
-%
-\definecolor{rltbrightblue}{rgb}{0,0,1}
-\definecolor{rltblue}{rgb}{0,0,0.75}
-\definecolor{rltdarkblue}{rgb}{0,0,0.5}
-
-\definecolor{webred}{rgb}{0.5,.25,0}
-\definecolor{webblue}{rgb}{0,0,0.75}
-\definecolor{webgreen}{rgb}{0,0.5,0}
-\definecolor{webbrightgreen}{rgb}{0,0.5,0}
 
 \usepackage{listings}
 \lstset{ %
@@ -164,25 +146,7 @@ bookmarksopen=true]{hyperref}
 
 %\renewcommand{\headfont}{\scshape}
 
-
-%%% novas declaracoes para amsmath.sty
-%\DeclareMathOperator{\argmax}{argmax}
-\def\argmax{\operatornamewithlimits{arg\,max}}
-\DeclareMathOperator{\tgh}{tgh}
-\DeclareMathOperator{\arctg}{arctg}
-\DeclareMathOperator{\arcsen}{arcsen}
-\DeclareMathOperator{\sen}{sen}
-\DeclareMathOperator{\erf}{erf}
-\DeclareMathOperator{\ud}{d}
-\DeclareMathOperator{\jacobian}{J}
-\DeclareMathOperator{\abs}{abs}
-\DeclareMathOperator{\cov}{cov}
-\DeclareMathOperator{\signum}{sgn}
-\DeclareMathOperator{\decibel}{dB}
-\DeclareMathOperator{\pixel}{pixel}
-\DeclareMathOperator{\verdade}{\mathbf{Verdade}}
-\DeclareMathOperator{\falso}{\mathbf{Falso}}
-\DeclareMathOperator{\probcdf}{Pr}
+ \renewcommand*\contentsname{Índice Geral}
 
 
 %%
@@ -205,60 +169,28 @@ bookmarksopen=true]{hyperref}
 %% directoria onde se armazena os ficheiros
 \graphicspath{{EPS/}}
 
-%% \symbol{64} corresponde a @
-%% parte frontal da tese
 \frontmatter
 \input{capa}
 \thispagestyle{empty}
 \cleardoublepage
 
-
-%% corpo do livro
 \mainmatter
-%% realizacao de miniindices de conteudo
 
 
 \cleardoublepage
 \pagestyle{headings}
 \setcounter{page}{1}
 \pagenumbering{arabic}
-%\addcontentsline{toc}{section}{Contents}
-\addcontentsline{toc}{section}{Índice Geral}
 \tableofcontents
 \cleardoublepage
-% \addcontentsline{toc}{section}{Lista de Figuras}
- %\listoffigures
- %\cleardoublepage
-% \addcontentsline{toc}{section}{Lista de Tabelas}
- %\listoftables
- %\cleardoublepage
-%% \include{listasimbolos}
-%\cleardoublepage
-%\pagestyle{headings}
-%\setcounter{page}{1}
-%\pagenumbering{arabic}
 
 %%\part{}
 
-\chapter{Resumo}
-\label{chap:intro}
-Este trabalho abrange a criação de uma rede de estações meteorológicas no Baixo Alentejo. O mesmo apresenta um estudo sobre projectos semelhantes a nível mundial, quais as vantagens e problemas existentes nas implementações apresentadas.
-O trabalho pode ser dividido em três grandes áreas:
-\subsection*{Recolha de dados}
-\label{sec:recolha_dados}
-Nesta secção são apresentados projectos semelhantes, a forma como recolhem os d secção ados, o tipo de equipamentos utilizados no processo, as principais vantagens e dificuldades de um sistema do mesmo tipo.
-\subsection*{Envio dos dados para o instituto de meteorologia e obtenção de previsões meteorológicas}
-O documento apresenta a forma como é armazenada a informação e, posteriormente, enviada para o Instituto de Meteorologia para a obtenção das previsões meteorológicas para cada um dos locais onde se encontra uma estação meteorológica.
-\subsection*{Interface}
-Nesta secção é apresentado um estudo sobre os tipos de interfaces existentes para consulta de previsoes meteorológicas, bem como a explicação da criação de um interface para o sistema em causa.
-
-\cleardoublepage
-\chapter{Recolha de Dados}
-\label{chap:recolha_dados}
-Após uma pesquisa sobre sistemas semelhantes foram encontrados três considerados úteis para o estudo em causa, dois estarngeiros e um nacional. O Nacional
-
-\cleardoublepage
+\input{introducao}
+\input{recdados}
+\input{trocadados}
+\input{interface}
+\chapter{Conclusão}
+\chapter{Trabalho Futuro}
 \bibliography{bibliografia}
-
-
 \end{document}
