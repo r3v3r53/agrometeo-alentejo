@@ -1,0 +1,47 @@
+\chapter{Recolha de Dados}
+	As estações metereológicas estarão localizadas dispersamente 
+	o que torna mais complicada a tarefa da recolha automática dos dados das mesmas.
+	
+	\\Como existem vários tipos de estações metereológicas que, dependendo do fabricante, 
+	terão diferentes formas de acesso aos dados, o sistema deverá estar preparado para 
+	acolher equipamentos com as mais variadas formas de acesso aos dados.
+
+	\\De acordo com os dados fornecidos pela FAABA, e partindo do princípio que 
+	os equipamentos utilizados pelos seus membros serão uniformes no que diz respeito 
+	a marca, apresentamos uma solução com equipamentos da marca adcon.
+
+
+\section{Estado da Arte}
+Existem vários avanços em sistemas deste género a nível mundial. 
+\\Em Portugal, mais especificamente no Algarve, existe uma rede de estações meteorológicas, que além de fornecer os dados aos agricultores, permite às escolas um estudo mais aprofundado dos dados e, através dos seus laboratórios, estudar os resultados e chegar a conclusões acerca dos mais variados tipos de problemas. 
+\\Nos Estados Unidos, mais concretamente no estado de Washington foi criado um sistema autónomo de raiz que liberta os agricultores das marcas e equipamentos existentes no mercado, tornando as soluções mais baratas e permitindo uma maior contribuição e evolução das escolas na área. É de notar uma enorme vantagem na utilização do paradigma das redes de sensores wireless, que tornam muito mais simples e barata a resolução dos problemas de comunicação entre os vários equipamentos. 
+
+
+\section{Requisitos Funcionais}
+Estações meteorológicas da marca adcon, apetrechadas com equipamentos para comunicações, mais concretamente utilizando UHF e nos casos de estações fora do alcance terão que ter equipamentos para comunicação GSM / GPRS. Esta marca tem uma enorme vantagem pois utiliza o paradigma das redes de sensores wireless.
+Para a comunicação com as estações e armazenamento dos dados, deverá existir um gateway também da marca adcon.
+
+	\subsection{Estações Meteorológicas}
+	As estações devarão ter vários sensores, nomeadamente temperatura, medição da velicidade e direcção do vento, humidade, pluviosidade e pressão atmosférica.
+	Todas elas deverão estar equipadas com material de comunicação.
+
+	\\As estações deverão ter equipamento de rede instalado, sendo que nos caso de existir dificuldade de comunicação numa estação deverá ser estudada a aplicação de um aparelho GPRS na mesma, ou em uma próxima, para servir de repetidor e fazer a ligação entre outras que também tenham dificuldades de comunicação.
+	\subsection{Gateway}
+	É necessario pelo menos um gateway da marca adcon para a conexão às várias estações, este gateway, além de controlar todas as comunicações tem a capacidade de armazenar dados localmente e disponibilizá-los através de um serviço http.
+\\Por esta via é depois possivel o tratamento dos mesmo para troca de informação com o Instituto de Meteorologia, bem como o seu armazenamento no servidor web para a apresentação dos dados no interface disponível ao público.
+
+	\subsection{Servidor}
+	É necessario um servidor que tenha instalado o Apache, mysql e php. Nele será instalado um portal wordpress que será o principal interface para a disponibilização da informação ao público.
+
+
+\section{Requisitos Não Funcionais}
+	\subsection{Conectividade}
+	É necessário que exista uma elevada taxa de conectividade entre todas as estações e o gateway. Assim, deveráser efectuada uma medição das ligações periodicamente para a avaliação das condições de ligação para se ponderar a colocação de eventuais pontos de acesso ou intalação de aparelhos GPRS nas estações com mais dificuldade de acesso.
+\\É tambem necessária uma boa manutenção dos equipamentos e sua substituição em caso de mau funcionamento.
+
+	\subsection{Segurança}
+	As estações deverão estar protegidas de acessos indevidos. O acesso aos dados do gateway deverá ser limitado ao menor número de utilizadores possível or forma a evitar congestionamento no seu acesso. 
+
+	\subsection{Desempenho}
+	O servidor deverá ser capaz de lidar com múltiplos acessos e aceder a um elevado número de estações. 
+\\ Deverão existir formas de evitar quebras dos serviços ou reposição dos mesmo em caso de eventuais falhas.
